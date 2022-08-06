@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+    "baseUrl": "src", //Absolute import
     "target": "es5",  // Specify ECMAScript target version
     "lib": [
       "dom",
