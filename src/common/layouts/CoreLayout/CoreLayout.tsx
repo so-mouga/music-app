@@ -2,6 +2,7 @@ import { Footer } from 'common/components/Footer';
 import { Header } from 'common/components/Header';
 import { SideBar } from 'common/components/SideBar';
 import React, { FunctionComponent } from 'react';
+import './_coreLayout.scss';
 
 interface CoreLayoutProps {
   children: JSX.Element;
@@ -9,10 +10,10 @@ interface CoreLayoutProps {
 
 const CoreLayout: FunctionComponent<CoreLayoutProps> = ({ children }): JSX.Element => {
   return (
-    <div>
+    <div className="main">
       <Header />
       <SideBar />
-      {children}
+      <div className="main__content">{children}</div>
       <Footer />
     </div>
   );

@@ -1,10 +1,11 @@
 import React from 'react';
+import './_header.scss';
 
 const Header = (): JSX.Element => {
   return (
-    <div>
+    <header className="header">
       <p>Header</p>
-    </div>
+    </header>
   );
 };
 

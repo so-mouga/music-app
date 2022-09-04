@@ -3,8 +3,8 @@ import React from 'react';
 import Discover from '../Discover';
 
 describe('Discover', () => {
-  render(<Discover />);
-  const linkElement = screen.getByText(/Discover/i);
-
-  expect(linkElement).toBeInTheDocument();
+  test('should render the component', () => {
+    render(<Discover />);
+    expect(screen.getByText('Discover')).toBeInTheDocument();
+  });
 });
